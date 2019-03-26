@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5524477041282564758}
   - component: {fileID: 5524477041282564749}
+  - component: {fileID: 1977358128}
+  - component: {fileID: 1977358129}
   m_Layer: 9
   m_Name: fighter
   m_TagString: Untagged
@@ -136,6 +138,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &1977358128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7592bd6412b4142ac47d6f85922a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 5
+  maxForce: 10
+--- !u!114 &1977358129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524477041282564756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8946ea69547d1a14b9e905a8fdc415b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  slowingDistance: 30
+  TargetBases:
+  - {fileID: 4792383233245242186, guid: afbf56b60b2bb7041ac510a463688144, type: 3}
+  - {fileID: 417959660254858230, guid: 2f153e090ee8a914dab0d79b96eca2bb, type: 3}
+  - {fileID: 2447368258810056745, guid: c15b7b82a3c4df2409bbb2aceeed2c3f, type: 3}
+  - {fileID: 4530715949499231147, guid: cb09319bf8a53774d87e3bd1a86a431b, type: 3}
 --- !u!1 &8813897858953667768
 GameObject:
   m_ObjectHideFlags: 0
