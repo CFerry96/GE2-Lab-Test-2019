@@ -55,6 +55,7 @@ public class Base : MonoBehaviour
     private void Spawn()
     {
         Instantiate(fighterPrefab, this.transform.position, Quaternion.identity);
+
         tiberium -= 10;
     }
 
